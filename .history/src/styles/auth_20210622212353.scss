@@ -1,0 +1,30 @@
+#page-auth {
+	display: flex;
+	align-items: stretch;
+	height: 100vh;
+
+	aside {
+		flex: 7;
+
+		background: #835afd;
+		color: #fff;
+
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+
+		padding: 8rem 5rem;
+
+		img {
+			max-width: 20rem;
+		}
+
+		strong {
+			font: 700 2.25rem 'Poppins', sans-serif;
+		}
+	}
+
+	main {
+		flex: 8;
+	}
+}
