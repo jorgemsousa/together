@@ -1,34 +1,33 @@
+import { Link } from 'react-router-dom';
 import illustrationImg from '../assets/images/illustration.svg'
 import logoImg from '../assets/images/logo.svg'
-import googleIconImg from '../assets/images/google-icon.svg'
+
+import {Button} from  '../components/button'
 
 import '../styles/auth.scss'
 
-export function Home() {
+export function NewRoom() {
   return(
-    <div>
+    <div id="page-auth">
       <aside>
         <img src={illustrationImg} alt="illustration" />
-        <strong>Crie dalas de Q&amp;A ao-vivo</strong>
+        <strong>Crie salas de Q&amp;A ao-vivo</strong>
         <p>Tire as dúvidas da sua audiência em tempo real</p>
       </aside>
       <main>
-        <div>
+        <div className="main-content">
           <img src={logoImg} alt="logo" />
-          <button>
-            <img src={googleIconImg} alt="gogle" />
-            Crie sua sala com o Google
-          </button>
-          <div>ou entre em uma sala</div>
+          <h2>Criar uma nova sala</h2>
           <form>
             <input 
               type="text"
-              placeholder="Digite o código da sala"
+              placeholder="Nome da sala"
             />
-            <button type="submit">
-              Entrar na sala
-            </button>
+            <Button type="submit">
+              Criar sala
+            </Button>
           </form>
+          <p>Quer entrar em uma sala existente? <Link to="/">Clique aqui</Link></p> 
         </div>
       </main>
     </div>

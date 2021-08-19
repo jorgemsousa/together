@@ -9,8 +9,8 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <Route path='/' exact component={Home}  />
-        <Route path='/rooms/new' component={NewRoom} />
+        <Route path='/' component={Home} exact />
+        <Route path='/newroom' component={NewRoom} />
       </BrowserRouter>
     </div>
   );
