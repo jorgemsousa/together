@@ -13,15 +13,6 @@
       > img {
         max-height: 3rem;
       }
-
-      > div {
-        display: flex;
-        gap: 1rem;
-      }
-
-      button {
-        height: 2.25rem;
-      }
     }
   }
 
@@ -79,7 +70,7 @@
             border-radius: 50%;
           }
 
-          > span {
+          span {
             margin-left: 0.5rem;
             font-size: .8rem;
             color: #29292e;
@@ -103,10 +94,6 @@
           }
         }
       }
-    }
-
-    .question-room {
-      margin-top: 2rem;
     }
   }
 }
