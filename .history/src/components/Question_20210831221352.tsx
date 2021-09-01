@@ -23,9 +23,9 @@ export function Question({
 }: QuestionProps) {
   return (
     <div className={cx(
-      'question',
+      'questions',
       { answered: isAnswered },
-      { highlighted: isHighlighted  && !isAnswered },
+      { highlighted: isHighlighted },
     )}>
       <p>{content}</p>
       <footer>

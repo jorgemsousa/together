@@ -24,7 +24,7 @@ type QuestionType = {
   }
   content: string;
   isAnswered: boolean;
-  isHighlighted: boolean;
+  isHilighted: boolean;
   likeCount: number;
   likeId: string | undefined;
 }
